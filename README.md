@@ -1,4 +1,4 @@
-# Playground
+# Vanilla JavaScript Boilerplate
 
 A simple and easy boilerplate for testing out vanilla projects.
 
