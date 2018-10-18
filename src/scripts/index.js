@@ -1,4 +1,3 @@
-
 let LOADED = false;
 
 /**
@@ -6,7 +5,7 @@ let LOADED = false;
  *
  * @return {void}
  */
-function bootstrap () {
+function bootstrap() {
   // We don't want to load our application twice.
   if (LOADED) {
     return;
@@ -14,13 +13,13 @@ function bootstrap () {
 
   LOADED = true;
 
-  console.log('The application has been loaded.');
+  console.log("The application has been loaded.");
 
   // When the application is loaded we remove the event listeners.
-  document.removeEventListener('DOMContentLoaded', bootstrap);
-  window.removeEventListener('load', bootstrap);
+  document.removeEventListener("DOMContentLoaded", bootstrap);
+  window.removeEventListener("load", bootstrap);
 }
 
 // We setup two listeners for better browser support.
-document.addEventListener('DOMContentLoaded', bootstrap);
-window.addEventListener('load', bootstrap);
+document.addEventListener("DOMContentLoaded", bootstrap);
+window.addEventListener("load", bootstrap);
